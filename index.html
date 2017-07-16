@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<style>
+
+    form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 40%;
+
+    }
+    .green {
+        color: green;
+    }
+
+    .cold {
+        color:  blue;
+    }
+    .hot {
+        color: red;
+    }
+
+
+</style>
+    <form onsubmit="return false">
+        <label for="n">| Enter a temperature |</label>
+        <input type="number" id="n">
+
+        <input type="radio" id="c"  name="Temp" value="Celsius" >Celsius
+        <input type="radio" id="f"  name="Temp" value="Fahrenheit">Fahrenheit
+        <p class="green" id="output"></p>
+        <button onkeyup="" id="submit"  type="submit">Convert</button>
+        <button id="reset" type="reset">Reset</button>
+
+    </form>
+
+
+<script src="converter.js"></script>
+</body>
+</html>
